@@ -4,7 +4,40 @@
   "description": "Beautiful flag icons for usage in React.js apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "copy": "cp -r ./node_modules/FlagKit/Assets/SVG ./src/img",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "test": "cross-env NODE_ENV=test jest --coverage",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false,
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "react",
+      "stage-0"
+    ],
+    "env": {
+      "production": {
+        "plugins": [
+          "transform-react-remove-prop-types",
+          "transform-react-constant-elements",
+          "transform-react-inline-elements"
+        ]
+      },
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
   },
   "repository": {
     "type": "git",
@@ -23,11 +56,53 @@
     "url": "https://github.com/stephenway/react-flagkit/issues"
   },
   "homepage": "https://github.com/stephenway/react-flagkit#readme",
-  "devDependencies": {
-    "FlagKit": "git+https://github.com/madebybowtie/FlagKit.git"
+  "jest": {
+    "setupFiles": [
+      "./config/shim.js",
+      "./config/jest.setup.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/*.test.{js,jsx}",
+      "!**/node_modules/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 98,
+        "branches": 91,
+        "functions": 98,
+        "lines": 98
+      }
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "testRegex": "tests/.*\\.test\\.js$"
   },
-  "scripts": {
-    "copy": "cp -r ./node_modules/FlagKit/Assets/SVG ./src/img",
-    "postinstall": "npm run copy"
+  "devDependencies": {
+    "FlagKit": "git+https://github.com/madebybowtie/FlagKit.git",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.3",
+    "jest-cli": "^21.2.1",
+    "react-styleguidist": "^6.0.32",
+    "react-test-renderer": "^16.0.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "cross-env": "^5.1.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "peerDependencies": {
+    "react-dom": "^16.0.0"
   }
 }
