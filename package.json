@@ -1,0 +1,26 @@
+{
+  "name": "react-flagkit",
+  "version": "1.0.0",
+  "description": "Beautiful flag icons for usage in React.js apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenway/react-flagkit.git"
+  },
+  "keywords": [
+    "icons",
+    "react",
+    "flags",
+    "webapp",
+    "flag-icons"
+  ],
+  "author": "Stephen Way <way.stephen@gmail.com> (http://stephenway.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephenway/react-flagkit/issues"
+  },
+  "homepage": "https://github.com/stephenway/react-flagkit#readme"
+}
