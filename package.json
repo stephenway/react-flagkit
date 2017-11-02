@@ -17,10 +17,17 @@
     "webapp",
     "flag-icons"
   ],
-  "author": "Stephen Way <way.stephen@gmail.com> (http://stephenway.net)",
+  "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/stephenway/react-flagkit/issues"
   },
-  "homepage": "https://github.com/stephenway/react-flagkit#readme"
+  "homepage": "https://github.com/stephenway/react-flagkit#readme",
+  "devDependencies": {
+    "FlagKit": "git+https://github.com/madebybowtie/FlagKit.git"
+  },
+  "scripts": {
+    "copy": "cp -r ./node_modules/FlagKit/Assets/SVG ./src/img",
+    "postinstall": "npm run copy"
+  }
 }
