@@ -23,7 +23,7 @@ npm install --save react-flagkit
 ### Methods and Props
 
 Prop name | Type | Default | Description
---- | ---
+--- | --- | --- | ---
 `country` | string | Required | The country code for the image path
 `role` | string | img | The a11y role type for the `<img />` tag
 `size` | number | 24 | The size of the image
