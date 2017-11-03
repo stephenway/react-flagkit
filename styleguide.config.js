@@ -3,4 +3,5 @@ module.exports = {
   showUsage: true,
   showCode: true,
   skipComponentsWithoutExample: true,
+  styleguideDir: 'docs',
 };
