@@ -9,16 +9,19 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['env', 'react', 'stage-0']
-        }
-      }
-    ]
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.svg$/,
+        use: 'file-loader',
+      },
+    ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],

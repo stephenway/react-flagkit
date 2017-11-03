@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 export default function Flag(props) {
   const { content, role, size, ...otherProps } = props;
+  const flagSrc = require(`./img/SVG/${content}.svg`);
   return (
     <img
-      src={`./src/SVG/${content}.svg`}
+      src={flagSrc}
       role={role}
       alt={`${content} Flag`}
       height={size}
