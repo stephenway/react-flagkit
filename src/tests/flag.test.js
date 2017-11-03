@@ -2,11 +2,11 @@ import React from 'react';
 import { mount } from 'enzyme';
 import Flag from '../flag';
 
-const content = 'US';
+const country = 'US';
 const role = 'img';
 const size = 24;
 const renderComponent = (props ={}) => mount(
-  <Flag content={content} role={role} size={size} {...props} />
+  <Flag country={country} role={role} size={size} {...props} />
 );
 
 describe('<Flag />', () => {
