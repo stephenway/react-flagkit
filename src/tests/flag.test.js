@@ -1,10 +1,11 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Flag from '../flag';
+import { default as Flag } from '../flag';
 
 const country = 'US';
 const role = 'img';
 const size = 24;
+const flagSrc = `./img/SVG/${country}.svg`;
 const renderComponent = (props ={}) => mount(
   <Flag country={country} role={role} size={size} {...props} />
 );
@@ -19,6 +20,12 @@ describe('<Flag />', () => {
     const renderedComponent = renderComponent();
     expect(renderedComponent.find('img').prop('src')).toBeDefined();
   });
+
+  // TODO: The prop is returning an empty object
+  // it('should have a valid src path', () => {
+  //   const renderedComponent = renderComponent();
+  //   expect(renderedComponent.find('img').props()).toEqual(flagSrc);
+  // });
 
   it('should have a role attribute', () => {
     const renderedComponent = renderComponent();
