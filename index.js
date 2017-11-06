@@ -1,1 +1,1 @@
-export Flag from './src/flag';
+export { default as Flag } from './src/flag';
