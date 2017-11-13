@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+  <g fill="none">
+    <rect width="21" height="15" fill="#FFFFFF"/>
+    <rect width="5" height="15" x="8" fill="#DC171D"/>
+    <rect width="21" height="5" y="5" fill="#012A87"/>
+    <g fill="#FFFFFF" transform="translate(5.5 4)">
+      <g transform="translate(4 .583)">
+        <g transform="translate(.625 .625)">
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+        </g>
+        <g transform="rotate(72 .507 1.368)">
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+        </g>
+        <g transform="rotate(-72 1.368 .507)">
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+        </g>
+        <g transform="rotate(144 .836 1.039)">
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+        </g>
+        <g transform="rotate(-144 1.039 .836)">
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+          <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+        </g>
+      </g>
+      <g transform="translate(5.25 1.833)">
+        <g transform="translate(2.083 .13)">
+          <g transform="translate(.625 .625)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(72 .507 1.368)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-72 1.368 .507)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(144 .836 1.039)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-144 1.039 .836)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+        </g>
+        <g transform="translate(.13 2.083)">
+          <g transform="translate(.625 .625)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(72 .507 1.368)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-72 1.368 .507)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(144 .836 1.039)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-144 1.039 .836)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+        </g>
+      </g>
+      <g transform="matrix(-1 0 0 1 5.25 1.833)">
+        <g transform="translate(2.083 .13)">
+          <g transform="translate(.625 .625)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(72 .507 1.368)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-72 1.368 .507)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(144 .836 1.039)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-144 1.039 .836)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+        </g>
+        <g transform="translate(.13 2.083)">
+          <g transform="translate(.625 .625)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(72 .507 1.368)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-72 1.368 .507)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(144 .836 1.039)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+          <g transform="rotate(-144 1.039 .836)">
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="rotate(18 .826 .394)"/>
+            <polygon points=".513 .081 .513 .706 .826 .706" transform="scale(-1 1) rotate(18 .2 -3.552)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
