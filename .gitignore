@@ -59,3 +59,6 @@ typings/
 
 # IntelliJ IDEA
 .idea
+
+lib
+dist

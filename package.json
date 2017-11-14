@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Beautiful flag icons for usage in React.js apps",
   "main": "index.js",
+  "jsnext:main": "index.es.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production node ./build",
     "copy": "cp -r ./node_modules/FlagKit/Assets/SVG ./src/img",
+    "patch": "npm version patch && npm run build",
+    "prepublish": "npm run build",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "test": "cross-env NODE_ENV=test jest --coverage",
@@ -12,15 +16,7 @@
   },
   "babel": {
     "presets": [
-      [
-        "env",
-        {
-          "modules": false,
-          "targets": {
-            "node": "current"
-          }
-        }
-      ],
+      "latest",
       "react",
       "stage-0"
     ],
@@ -29,7 +25,8 @@
         "plugins": [
           "transform-react-remove-prop-types",
           "transform-react-constant-elements",
-          "transform-react-inline-elements"
+          "transform-react-inline-elements",
+          "transform-ternary-to-if-else"
         ]
       },
       "test": {
@@ -91,7 +88,13 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-ternary-to-if-else": "^1.0.2",
+    "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.1.0",
@@ -100,6 +103,10 @@
     "react-styleguidist": "^6.0.32",
     "react-test-renderer": "^16.0.0",
     "rimraf": "^2.6.2",
+    "rollup": "^0.51.5",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "webpack": "^3.8.1"
   },
   "dependencies": {
