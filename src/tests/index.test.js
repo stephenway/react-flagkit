@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { default as Flag } from '../flag';
+import { default as Flag } from '../index';
 
 const country = 'US';
 const role = 'img';
