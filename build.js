@@ -11,7 +11,7 @@ const pkg = require('./package.json');
 let promise = Promise.resolve();
 
 // Clean up the output directory
-promise = promise.then(() => del(['dist/*']));
+promise = promise.then(() => del(['dist/*', '!dist/img']));
 
 // Compile source code into a distributable format with Babel
 ['es', 'cjs', 'umd'].forEach((format) => {
