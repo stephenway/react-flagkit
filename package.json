@@ -1,6 +1,6 @@
 {
   "name": "react-flagkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Beautiful flag icons for usage in React.js apps",
   "main": "index.js",
   "jsnext:main": "index.es.js",
