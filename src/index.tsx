@@ -11,7 +11,7 @@ export interface Props extends HTMLAttributes<HTMLImageElement> {
 
 // Please do not use types off of a default export module or else Storybook Docs will suffer.
 // see: https://github.com/storybookjs/storybook/issues/9556
-export const Flag: FC<Props> = ({
+const Flag: FC<Props> = ({
   country = 'US',
   role = 'img',
   size = 24,
@@ -42,3 +42,5 @@ export const Flag: FC<Props> = ({
   }
   return null;
 };
+
+export default Flag;
