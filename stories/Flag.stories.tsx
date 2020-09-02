@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flag, Props } from '../src';
+import Flag, { Props } from '../src';
 
 export default {
   title: 'react-flagkit',
