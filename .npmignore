@@ -1,7 +1,0 @@
-.npmignore
-*.log
-node_modules
-styleguide
-src/tests
-coverage
-config

@@ -1,122 +1,62 @@
 {
-  "name": "react-flagkit",
-  "version": "1.0.1",
-  "description": "Beautiful flag icons for usage in React.js apps",
-  "main": "index.js",
-  "jsnext:main": "index.es.js",
-  "scripts": {
-    "build": "cross-env NODE_ENV=production node ./build",
-    "copy": "cp -r ./node_modules/FlagKit/Assets/SVG ./src/img",
-    "patch": "npm version patch && npm run build",
-    "prepublish": "npm run build",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "test": "cross-env NODE_ENV=test jest --coverage",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll"
-  },
-  "babel": {
-    "presets": [
-      "latest",
-      "react",
-      "stage-0"
-    ],
-    "env": {
-      "production": {
-        "plugins": [
-          "transform-react-remove-prop-types",
-          "transform-react-constant-elements",
-          "transform-react-inline-elements",
-          "transform-ternary-to-if-else"
-        ]
-      },
-      "test": {
-        "plugins": [
-          "transform-es2015-modules-commonjs"
-        ]
-      }
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stephenway/react-flagkit.git"
-  },
-  "keywords": [
-    "icons",
-    "react",
-    "flags",
-    "webapp",
-    "flag-icons"
-  ],
-  "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
+  "version": "2.0.0",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stephenway/react-flagkit/issues"
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
   },
-  "homepage": "https://github.com/stephenway/react-flagkit#readme",
-  "jest": {
-    "setupFiles": [
-      "./config/ignoreSVGStrings.js",
-      "./config/shim.js",
-      "./config/jest.setup.js"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/**/*.test.{js,jsx}",
-      "!svg/img/**",
-      "!**/node_modules/**"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 98,
-        "branches": 91,
-        "functions": 98,
-        "lines": 98
-      }
-    },
-    "moduleDirectories": [
-      "node_modules",
-      "!svg/img",
-      "src"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|jpg|png|svg)$": "<rootDir>/empty-module.js"
-    },
-    "testRegex": "tests/.*\\.test\\.js$"
-  },
-  "devDependencies": {
-    "FlagKit": "git+https://github.com/madebybowtie/FlagKit.git",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-plugin-transform-react-constant-elements": "^6.23.0",
-    "babel-plugin-transform-react-inline-elements": "^6.22.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-plugin-transform-ternary-to-if-else": "^1.0.2",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.3",
-    "jest-cli": "^21.2.1",
-    "react-styleguidist": "^6.0.32",
-    "react-test-renderer": "^16.0.0",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.51.5",
-    "rollup-plugin-babel": "^3.0.2",
-    "rollup-plugin-commonjs": "^8.2.6",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "webpack": "^3.8.1"
-  },
-  "dependencies": {
-    "cross-env": "^5.1.1",
-    "file-loader": "^1.1.5",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "postinstall": "cp -r ./node_modules/flagkit/assets/svg ./src/img"
   },
   "peerDependencies": {
-    "react-dom": "^16.0.0"
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "react-flagkit",
+  "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
+  "module": "dist/react-flagkit.esm.js",
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-docs": "^6.0.21",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/addons": "^6.0.21",
+    "@storybook/react": "^6.0.21",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "FlagKit": "git+https://github.com/madebybowtie/FlagKit.git",
+    "husky": "^4.2.5",
+    "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "ts-loader": "^8.0.3",
+    "tsdx": "^0.13.3",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
   }
 }
