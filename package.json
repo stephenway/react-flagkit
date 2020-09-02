@@ -17,7 +17,7 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o ./docs",
     "postinstall": "cp -r ./node_modules/flagkit/assets/svg ./src/img"
   },
   "peerDependencies": {
