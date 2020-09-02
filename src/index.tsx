@@ -6,7 +6,6 @@ export interface Props extends HTMLAttributes<HTMLImageElement> {
   role?: string;
   size?: number;
   alt?: string;
-  remote?: boolean;
 }
 
 // Please do not use types off of a default export module or else Storybook Docs will suffer.
@@ -16,7 +15,6 @@ const Flag: FC<Props> = ({
   role = 'img',
   size = 24,
   alt,
-  remote,
   ...props
 }) => {
   if (country) {
@@ -24,9 +22,7 @@ const Flag: FC<Props> = ({
     if (countryCodes.find(el => el === country) !== undefined) {
       const jsDelivr =
         'https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG';
-      const flagSrc = !remote
-        ? require(`./img/${countryCode}.svg`)
-        : `${jsDelivr}/${countryCode}.svg`;
+      const flagSrc = `${jsDelivr}/${countryCode}.svg`;
       return (
         <img
           src={flagSrc}
