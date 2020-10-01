@@ -19,7 +19,7 @@ const Flag: FC<Props> = ({
 }) => {
   if (country) {
     const countryCode = country.substring(0, 2).toUpperCase();
-    if (countryCodes.find((el) => el === country) !== undefined) {
+    if (countryCodes.find(el => el === country) !== undefined) {
       const jsDelivr =
         'https://cdn.jsdelivr.net/gh/madebybowtie/FlagKit@2.2/Assets/SVG';
       const flagSrc = `${jsDelivr}/${countryCode}.svg`;
