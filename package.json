@@ -31,7 +31,8 @@
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "arrowParens": "avoid"
   },
   "name": "react-flagkit",
   "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
