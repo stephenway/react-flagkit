@@ -11,7 +11,7 @@ describe('Flag', () => {
   it('renders text when country code is unrecognized', async () => {
     const div = document.createElement('div');
     ReactDOM.render(<Flag country="USSR" size={16} />, div);
-    expect(div.innerHTML).toBe('<span>US</span>');
+    expect(div.innerHTML).toBe('<span>USSR</span>');
     ReactDOM.unmountComponentAtNode(div);
   });
   it('renders nothing when no country code is supplied', async () => {
