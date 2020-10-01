@@ -69,6 +69,7 @@ const countryCodes = [
   'FK',
   'FM',
   'FO',
+  'FR',
   'GA',
   'GB',
   'GD',
@@ -122,6 +123,7 @@ const countryCodes = [
   'LA',
   'LB',
   'LC',
+  'LGBT',
   'LI',
   'LK',
   'LR',
@@ -248,7 +250,6 @@ const countryCodes = [
   'GB-SCT',
   'GB-WLS',
   'GB-ZET',
-  'LGBT',
   'US-CA',
 ];
 

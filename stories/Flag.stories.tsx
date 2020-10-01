@@ -1,5 +1,6 @@
 import React from 'react';
 import Flag, { Props } from '../src';
+import countryCodes from '../src/countryCodes';
 
 export default {
   title: 'react-flagkit',
@@ -22,8 +23,16 @@ export const Switzerland = () => <Flag country="CH" />;
 
 export const Canada = () => <Flag country="CA" />;
 
-export const USCanada = () => <Flag country="US-CAp" />;
+export const France = () => <Flag country="FR" />;
+
+export const USCanada = () => <Flag country="US-CA" />;
 
 export const Large = () => <Flag size={100} />;
 
 export const ButtonRole = () => <Flag role="button" />;
+
+export const AllFlags = () => {
+  return countryCodes.map(flag => {
+    return <Flag country={flag} />;
+  });
+};
