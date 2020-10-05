@@ -42,7 +42,7 @@
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-docs": "^6.0.21",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-links": "^6.0.25",
     "@storybook/addons": "^6.0.21",
     "@storybook/react": "^6.0.21",
     "@types/react": "^16.9.50",
