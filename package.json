@@ -38,7 +38,7 @@
   "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
   "module": "dist/react-flagkit.esm.js",
   "devDependencies": {
-    "@babel/core": "^7.11.6",
+    "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.0.26",
     "@storybook/addon-docs": "^6.0.26",
     "@storybook/addon-info": "^5.3.21",
