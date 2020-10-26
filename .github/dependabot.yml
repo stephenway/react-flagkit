@@ -1,6 +1,14 @@
+# Dependabot configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
 version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 10
+    assignees:
+      - "stephenway"
+    labels:
+      - "dependencies"
