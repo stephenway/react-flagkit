@@ -4,7 +4,7 @@ import countryCodes from './countryCodes';
 export type CountryCode = typeof countryCodes[number];
 
 export interface Props extends HTMLAttributes<HTMLImageElement> {
-  country?: CountryCode;
+  country?: CountryCode | Omit<string, CountryCode>;
   role?: string;
   size?: number;
   alt?: string;
