@@ -1,8 +1,10 @@
 import React, { FC, HTMLAttributes } from 'react';
 import countryCodes from './countryCodes';
 
+export type CountryCode = typeof countryCodes[number];
+
 export interface Props extends HTMLAttributes<HTMLImageElement> {
-  country?: string;
+  country?: CountryCode | Omit<string, CountryCode>;
   role?: string;
   size?: number;
   alt?: string;
