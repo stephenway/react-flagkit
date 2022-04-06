@@ -13,6 +13,7 @@ const countryCodes = [
   'AU',
   'AW',
   'AX',
+  'AZ',
   'BA',
   'BB',
   'BD',
