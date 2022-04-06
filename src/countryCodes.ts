@@ -252,6 +252,6 @@ const countryCodes = [
   'GB-WLS',
   'GB-ZET',
   'US-CA',
-];
+] as const;
 
 export default countryCodes;
