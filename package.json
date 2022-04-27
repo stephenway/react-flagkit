@@ -1,4 +1,6 @@
 {
+  "name": "react-flagkit",
+  "author": "Stephen Way <stephen@stephenway.net> (http://stephenway.net)",
   "version": "2.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -33,8 +35,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-flagkit",
-  "author": "Stephen Way",
   "module": "dist/react-flagkit.esm.js",
   "size-limit": [
     {
