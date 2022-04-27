@@ -3,7 +3,7 @@ on:
   push:
     branches: [master]
     paths: 
-      - src
+      - package
     paths-ignore: 
       - node_modules
       - coverage

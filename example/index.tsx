@@ -1,14 +1,11 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import Flag from '../src';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './index.css';
 
-const App = () => {
-  return (
-    <div>
-      <Flag />
-    </div>
-  );
-};
+const container = document.getElementById('root');
+// @ts-ignore
+const root = createRoot(container);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+root.render(<App />);

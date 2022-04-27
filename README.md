@@ -10,6 +10,10 @@ Beautiful flag icons for usage in React webapps. All flags are provided as impor
 
 ```shell
 npm install --save react-flagkit
+
+// or
+
+yarn add react-flagkit
 ```
 
 ## Usage

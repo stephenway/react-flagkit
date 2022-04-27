@@ -1,0 +1,93 @@
+:root {
+  --light-blue: rgb(48, 63, 76);
+  --light-blue-2: rgb(63, 83, 101);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-form {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.App-select {
+  width: 200px;
+}
+
+.App-select,
+.App-input {
+  background-color: var(--light-blue);
+  color: #fff;
+  border: none;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.App-field {
+  margin-bottom: 1em;
+}
+
+.App-code {
+  position: relative;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  padding: 0 1em;
+}
+
+.App-copy-btn {
+  border-radius: 25px;
+  background-color: var(--light-blue);
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  position: absolute;
+  bottom: -22px;
+  left: calc(50% - 23px);
+  padding: .25em .5em;
+}
+
+.App-copy-btn:hover {
+  background-color: var(--light-blue-2);
+}
+
+.App-copy-btn:active {
+  background-color: var(--light-blue);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

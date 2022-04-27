@@ -1,7 +1,10 @@
 {
-  "name": "example",
+  "name": "react-flagkit-example",
   "version": "1.0.0",
   "main": "index.js",
+  "targets": {
+    "main": false
+  },
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
@@ -12,13 +15,14 @@
   },
   "alias": {
     "react": "../node_modules/react",
-    "react-dom": "../node_modules/react-dom/profiling",
+    "react-dom": "../node_modules/react-dom",
+    "postcss": "../node_modules/postcss",
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   },
   "devDependencies": {
-    "@types/react": "^16.9.11",
-    "@types/react-dom": "^16.8.4",
-    "parcel": "^1.12.3",
-    "typescript": "^3.4.5"
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "parcel": "^2.4.1",
+    "typescript": "^4.6.3"
   }
 }
